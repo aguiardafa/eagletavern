@@ -32,4 +32,5 @@ public class BeersController {
 		redirect.addFlashAttribute("successMessage", "Cerveja SKU "+  beer.getSku() +" cadastrada com sucesso!!!");
 		return "redirect:/beers/new"; //redirecionamento para uma nova URL (nova requisição)
 	}
+
 }
