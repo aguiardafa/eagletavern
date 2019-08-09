@@ -8,9 +8,9 @@
 	
 	<title>Taverna da Águia</title>
 	
-	<link rel="stylesheet" type="text/css" href="/eagletavern/layout/stylesheets/vendors.min.css" />
-	<link rel="stylesheet" type="text/css" href="/eagletavern/layout/stylesheets/algaworks.min.css" />
-	<link rel="stylesheet" type="text/css" href="/eagletavern/layout/stylesheets/application.css" />
+	<link rel="stylesheet" type="text/css" th:href="@{/layout/stylesheets/vendors.min.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/layout/stylesheets/algaworks.min.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/layout/stylesheets/application.css}" />
 	
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,7 +27,7 @@
 
 				<div class="navbar-header">
 					<a class="navbar-brand  hidden-xs" href="#" style="padding: 0 !important;">
-						<img alt="Eagle Tavern" src="/eagletavern/images/logo.jpg" height="50"/>
+						<img alt="Eagle Tavern" th:src="@{/images/logo.jpg}" height="50"/>
 					</a>
 
 					<ul class="nav  navbar-nav">
@@ -207,7 +207,7 @@
 		</footer>
 	</div>
 
-	<script src="/eagletavern/layout/javascripts/vendors.min.js"></script>
-	<script src="/eagletavern/layout/javascripts/algaworks.min.js"></script>
+	<script th:src="@{/layout/javascripts/vendors.min.js}"></script>
+	<script th:src="@{/layout/javascripts/algaworks.min.js}"></script>
 </body>
 </html>
