@@ -19,6 +19,8 @@ import org.thymeleaf.templateresolver.ITemplateResolver;
 
 import com.aguiardafa.eagletavern.controller.BeersController;
 
+import nz.net.ultraq.thymeleaf.LayoutDialect;
+
 @Configuration
 @ComponentScan(basePackageClasses = { BeersController.class }) //declarando onde encontrar os controllers
 @EnableWebMvc //declarando que é uma aplicação MVC
@@ -45,6 +47,7 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
 		SpringTemplateEngine engine = new SpringTemplateEngine();
 		engine.setEnableSpringELCompiler(true);
 		engine.setTemplateResolver(templateResolver());
+		engine.addDialect(new LayoutDialect());
 		return engine;
 	}
 	
@@ -57,6 +60,12 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
 		resolver.setSuffix(".html");
 		resolver.setTemplateMode(TemplateMode.HTML);
 		return resolver;
+	}
+	
+	//configurando LayoutDialect para utilização de tampletes/layouts nas views
+	@Bean
+	public LayoutDialect layoutDialect() {
+	    return new LayoutDialect();
 	}
 	
 	//configurando onde estão os recursos estáticos
