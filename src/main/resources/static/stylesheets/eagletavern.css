@@ -1,0 +1,20 @@
+/*--------------*\
+  Utilitários
+\*--------------*/
+
+.eagle-glyphicon-large{
+	font-size: 18px;
+}
+
+
+/*--------------*\
+  Compenentes
+\*--------------*/
+
+/* Field Action */
+.eagle-field-action{
+	display: flex;
+}
+.eagle-field-action_icon{
+	margin: 6px 0 0 5px;
+}
