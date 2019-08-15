@@ -45,5 +45,8 @@
 	<script th:src="@{/javascripts/vendors/jquery.maskMoney.min.js}"></script>
 	<!-- JS do Projeto -->
 	<script th:src="@{/javascripts/eagletavern.js}"></script>
+	
+	<!-- Para adicionar JS extra do Projeto, que sejam específicos de alguma página -->
+	<th:block layout:fragment="javascript-extra"></th:block>
 </body>
 </html>
