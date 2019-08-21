@@ -23,10 +23,10 @@ import com.aguiardafa.eagletavern.controller.UsersController;
 
 import nz.net.ultraq.thymeleaf.LayoutDialect;
 
-@Configuration
+@Configuration //informando que este é a classe de configuração da aplicação spring
 @ComponentScan(basePackageClasses = { BeersController.class,
 										CustomersController.class,
-										UsersController.class}) //declarando onde encontrar os controllers
+										UsersController.class}) //declarando onde encontrar os controllers (beans)
 @EnableWebMvc //declarando que é uma aplicação MVC
 public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationContextAware {
 
@@ -75,6 +75,7 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
 	//configurando onde estão os recursos estáticos
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		registry.addResourceHandler("/**").addResourceLocations("classpath:/static/");
+		registry.addResourceHandler("/**")
+				.addResourceLocations("classpath:/static/");
 	}
 }

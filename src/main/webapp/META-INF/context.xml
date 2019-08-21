@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Context>
+	<!-- configurando o DataSource -->
+	<Resource name="jdbc/eagletavernDB" auth="Container"
+			factory="org.apache.naming.factory.BeanFactory"
+			driveClass="com.mysql.jdbc.Driver"
+			jdbcUrl="jdbc:mysql://localhost:3306/eagletavern_db?useSSL=false"
+			user="root"
+			password="root"
+	/>
+</Context>
