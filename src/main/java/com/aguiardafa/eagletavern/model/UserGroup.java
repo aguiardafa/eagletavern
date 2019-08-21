@@ -1,13 +1,13 @@
 package com.aguiardafa.eagletavern.model;
 
-public enum TipoPessoa {
+public enum UserGroup {
 
-	FISICA("Pessoa Física"),
-	JURUDICA("Pessoa Jurídica");
+	ADM("Administrador"),
+	VEND("Vendedor");
 	
 	private final String descricao;
 	
-	TipoPessoa(String descricao) {
+	UserGroup(String descricao) {
     	this.descricao = descricao;
     }
 	

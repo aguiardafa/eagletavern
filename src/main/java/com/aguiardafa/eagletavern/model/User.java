@@ -24,7 +24,7 @@ public class User {
 	@NotBlank
 	private Boolean status; 
 	
-	private List<GrupoUser> grupos;
+	private List<UserGroup> grupos;
 
 	public Long getId() {
 		return id;
@@ -74,11 +74,11 @@ public class User {
 		this.status = status;
 	}
 
-	public List<GrupoUser> getGrupos() {
+	public List<UserGroup> getGrupos() {
 		return grupos;
 	}
 
-	public void setGrupos(List<GrupoUser> grupos) {
+	public void setGrupos(List<UserGroup> grupos) {
 		this.grupos = grupos;
 	}
 }

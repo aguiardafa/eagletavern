@@ -13,7 +13,7 @@ public class Customer {
 	private String documento; //cpf/cnpj
 	
 	@NotNull
-	private TipoPessoa tipoPessoa;
+	private ConsumerType tipoPessoa;
 	
 	@NotBlank
 	private String telefone;
@@ -49,11 +49,11 @@ public class Customer {
 		this.documento = documento;
 	}
 
-	public TipoPessoa getTipoPessoa() {
+	public ConsumerType getTipoPessoa() {
 		return tipoPessoa;
 	}
 
-	public void setTipoPessoa(TipoPessoa tipoPessoa) {
+	public void setTipoPessoa(ConsumerType tipoPessoa) {
 		this.tipoPessoa = tipoPessoa;
 	}
 
