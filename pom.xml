@@ -24,7 +24,7 @@
 		<thymeleaf.version>3.0.11.RELEASE</thymeleaf.version>
 		<hibernate-validator.version>5.3.6.Final</hibernate-validator.version>
 		<thymeleaf-layout-dialect.version>2.4.1</thymeleaf-layout-dialect.version>
-		<mysql-connector-java.version>8.0.17</mysql-connector-java.version>
+		<mysql-connector-java.version>8.0.28</mysql-connector-java.version>
 		<hibernate.version>5.4.4.Final</hibernate.version>
 		<spring-data-jpa.version>2.1.10.RELEASE</spring-data-jpa.version>
 	</properties>
